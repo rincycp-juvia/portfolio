@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h2>Rincy</h2>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Menu Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Hi, I'm <span>Rincy</span></h1>
+        <p>Python Django Full Stack Developer</p>
+    </div>
+
+    <div class="profile-wraper">
+        <img src="images/profile.jpeg" alt="" class="profile-circle">
+    </div>
+
+    <div class="section fade-in">
+        <h2>About Me</h2>
+        <p style="text-align:center; max-width:600px; margin:auto;">
+            I am a passionate full stack developer specializing in Django and React,
+            focused on building clean and user-friendly applications.
+        </p>
+    </div>
+
+    <!-- Skills -->
+    <section class="skills-section">
+    <h2>MY <span>SKILLS</span></h2>
+    <div class="underline"></div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <div class="icon-circle" style="color:#ff5722;">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <h3>FrontEnd Development</h3>
+            <p>HTML5, CSS3, JavaScript, React, Bootstrap</p>
+            <div class="progress-bar">
+                <div class="progress frontend"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="icon-circle" style="color:#3498db;">
+                <i class="fa-brands fa-python"></i>
+            </div>
+            <h3>BackEnd Development</h3>
+            <p>Python, Django, REST API, Django REST Framework</p>
+            <div class="progress-bar">
+                <div class="progress backend"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="icon-circle" style="color:#27ae60;">
+                <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Database Management</h3>
+            <p>MySQL, PostgreSQL, SQLite</p>
+            <div class="progress-bar">
+                <div class="progress database"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="icon-circle" style="color:#ff2d55;">
+                <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <h3>Version Control</h3>
+            <p>Git, GitHub</p>
+            <div class="progress-bar">
+                <div class="progress version"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+        <h2>MY <span>PROJECTS</span></h2>
+    <div class="underline"></div>
+
+        <div class="section fade-in">
+        <h2>About Me</h2>
+        <p style="text-align:center; max-width:600px; margin:auto;">
+            Explore my project that showcase my skills and creativity.
+        </p>
+    </div>
+    
+
+        <div class="projects">
+
+            <div class="project" onclick="toggleOverlay(this)">
+                <img src="images/todo.png">
+                <div class="overlay">
+                    <h3>Todo App</h3>
+                    <p>Django, HTML, CSS</p>
+                    <a href="https://github.com/rincycp-juvia/Todo" class="btn primary">View</a>
+                </div>
+            </div>
+
+            <div class="project" onclick="toggleOverlay(this)">
+                <img src="images/restuarent.png">
+                <div class="overlay">
+                    <h3>Golden Bites</h3>
+                    <p>Html,CSS,Bootstrap</p>
+                    <a href="https://github.com/rincycp-juvia/GOLDE-BITE" class="btn primary">View</a>
+                </div>
+            </div>
+
+            <div class="project" onclick="toggleOverlay(this)">
+                <img src="images/valora.png">
+                <div class="overlay">
+                    <h3>Valora</h3>
+                    <p>HTML, CSS, Bootstrap</p>
+                    <a href="https://github.com/rincycp-juvia/VALORA" class="btn primary">View</a>
+                </div>
+            </div>
+            <div class="project" onclick="toggleOverlay(this)">
+                <img src="images/jobtrack.png">
+                <div class="overlay">
+                    <h3>Job Tracker</h3>
+                    <p>Django, React</p>
+                    <a href="https://github.com/rincycp-juvia/jobtracker" class="btn primary">View</a>
+                </div>
+            </div>
+            <div class="project" onclick="toggleOverlay(this)">
+                <img src="images/connecthub.png">
+                <div class="overlay">
+                    <h3>Connecthub</h3>
+                    <p>HTML, CSS</p>
+                    <a href="https://github.com/rincycp-juvia/ConnectHub.git" class="btn primary">View</a>
+                </div>
+            </div>
+            <div class="project" onclick="toggleOverlay(this)">
+                <img src="images/bmical.png">
+                <div class="overlay">
+                    <h3>BMI calculator</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/rincycp-juvia/BMI-calculator" class="btn primary">View</a>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section contact" id="contact">
+        <h2>Contact</h2>
+        <a href="https://github.com/rincycp-juvia">GitHub</a>
+        <a href="https://www.linkedin.com/in/rincy-c-paul23/">LinkedIn</a>
+        <p>Email: rincycp05@gmail.com</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Rincy | Portfolio</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+
+
+</body>
+
+</html>
